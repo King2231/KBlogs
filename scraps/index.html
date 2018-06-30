@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>KBlogs:)</title>
+    <link rel="shortcut icon" href="img/blog.png" type="favicon/ico" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+    $document.ready(function() {
+    $('#slide-section').click(function(){
+        alert("clicked");
+    });
+});
+</script>
+<div class="menu">
+
+<div class="brand">
+        <a href= "#" style= "text-decoration:none; color:#ffffff" >****KBlogs *******</a>
+    </div>
+<ul>
+<li><input type="text" name="search"><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
+<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-user"></span>SIGNUp</a></li>
+
+</ul>
+    <ul>
+     <li class="dropdown">
+        <a href="gh" class="dropbtn">Categories</a>
+        <div class="dropdown-content">
+            <a href="#">Kids</a>
+            <a href="#">Informative</a>
+            <a href="#">Business</a>
+            <a href="#">Abstract</a>
+            <a href="#">Technology</a>
+            <a href="#">Mythology</a>
+        </div>
+     </li>
+     <li><a href="#blog" class="slide-section">Blogs</a></li>
+     <li><a href="#about" class="slide-section">AboutUs</a></li>
+     <li><a href="#home" class="slide-section">Home</a></li>
+     <li style="float: left; font-size: 40px; padding: 5px 10px 5px 5px; display: none;"> ***KBlogs ****</li>
+   
+    </ul>
+</div>
+    <div class="body">
+     <div class="write">
+        <div class="col-5" id="write1">
+        UNLOAD YOUR CREATIVITY HERE....
+            <center>
+            <hr><hr>
+
+            <div class="col-11" id="write2">   
+                 <a href="signup.html">START BLOGGING...!!!</a>
+            </div>
+        </div>
+
+        <div class="col-6" style="position: absolute; right: 0px;">
+         Explore the blogger in you....<br>If not today then never...!!!
+         </div>
+     </div>
+
+     <!--img src="img/img1.png" height="700px" width="1350px"-->       
+    </div>   
+     <!--section id="section07" class="demo">
+    <h1>Scroll Down Button #7</h1>
+    <a href="#section08"><span></span><span></span><span></span>Scroll</a>
+</section-->
+    <div class="copyright">
+       <p>Copyright &copy; KING</p>  
+    </div>
+    
+    
+   
+<!--script type="text/javascript">
+    $(function() {
+    $('a[href*=#]').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+});
+</script-->
+
+</body>
+</html>

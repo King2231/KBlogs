@@ -1,0 +1,345 @@
+/*grid code*//
+* {
+    box-sizing: border-box;
+}
+.header {
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*gridcodeends*/
+
+
+body{
+    background-image: url(../img/one1.png); 
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+    height:0px;
+}
+ body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0px solid slategrey;
+}
+.body{
+    position: relative;
+height: 650px;
+width: 100%;
+background-color: rgba(0,0,0,0.5);
+color: #ffffff;
+    -moz-box-shadow: 0px 0px 20px 1px rgba(16, 16, 16, 0.57);
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(16, 16, 16, 0.57);
+    box-shadow: 0px 0px 20px 1px rgba(16, 16, 16, 0.57);
+}
+@font-face{
+
+font-family: 'Glyphicons Halflings';
+
+
+src: url('../fonts/glyphicons-halflings-regular.eot');
+
+src: url('../fonts/glyphicons-halflings-regular.eot?#iefix')
+format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2')
+format('woff2'), url('../fonts/glyphicons-halflings-regular.woff')
+format('woff'), url('../fonts/glyphicons-halflings-regular.ttf')
+format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular')
+format('svg');
+
+}
+
+.glyphicon{
+
+display: inline-block;
+
+text-decoration:none;
+font-family: 'Glyphicons Halflings';
+
+-webkit-font-smoothing: antialiased;
+
+-moz-osx-font-smoothing: grayscale;
+
+}
+
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+
+.glyphicon-user:before {
+  content: "\e008";
+}
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-edit:before {
+  content: "\e065";
+}
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+.glyphicon-tag:before {
+  content: "\e041";
+}
+.glyphicon-tags:before {
+  content: "\e042";
+}
+.glyphicon-book:before {
+  content: "\e043";
+}
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+.glyphicon-remove:before {
+  content: "\e014";
+}
+.glyphicon-home:before {
+  content: "\e021";
+}
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+.glyphicon-registration-mark:before {
+  content: "\e195";
+}
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+.glyphicon-phone-alt:before {
+  content: "\e183";
+}
+.glyphicon-phone:before {
+  content: "\e145";
+}
+#bottomtileholder{
+    position: relative;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+#bottomtileholder::-webkit-scrollbar {
+    width: 5px;
+    height:5px;
+    border-radius: 10px;
+}
+#bottomtileholder::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 5px 5px 7px rgba(66,66,66,1);
+}
+#bottomtileholder::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 5px solid slategrey;
+  border-radius: 10px;
+}
+#bottomtileholder ul{
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+        width: 120%;
+}
+#bottomtileholder ul a{
+    text-decoration: none;
+    color: inherit;
+}
+#bottomtileholder ul li{
+    display: inline-block;
+}
+#bottile{
+ position: relative;
+ height: 200px;
+ background-color: rgba(255,255,255,0.5);
+ border-radius: 5px;
+ padding-right: 10px;
+ overflow: hidden;
+ width: 190px;
+}
+#botbtitle{
+ position: relative;
+ font-size: 20px;
+ left: 5px;
+ padding-left: 5px;
+ padding-top: 20px;
+  padding-right: 10px;
+  overflow: hidden;
+  height: 25%;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+}
+#botdtime{
+padding-left: 10px;
+font-size: 10px;
+font-family: "Times New Roman", Georgia, Serif;
+ padding-right: 10px;
+ overflow: hidden;
+}
+#botbontent{
+padding-top: 20px;
+padding-left: 10px;
+font-size: 10px;
+color: #666666;
+ padding-right: 10px;
+text-decoration: none;
+overflow: hidden;
+}
+
+
+
+#righttileholder{
+    position: relative;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    
+    overflow-y: scroll;
+    justify-content: flex-start;
+}
+#rttile{
+ position: relative;
+ left: -10px;
+ height: 150px;
+ background-color: rgba(255,255,255,0.5);
+ border-radius: 5px;
+ overflow: hidden;
+ width: 93%;
+ margin-bottom: 10px;
+ float: left;
+}
+#rtbtitle{
+ position: relative;
+ font-size: 20px;
+ left: 5px;
+ padding-left: 5px;
+ padding-top: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+  height: 27%;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+}
+#rtdtime{
+padding-left: 10px;
+font-size: 12px;
+font-family: "Times New Roman", Georgia, Serif;
+ padding-right: 10px;
+ overflow: hidden;
+}
+#rtbontent{
+padding-top: 20px;
+padding-left: 10px;
+font-size: 10px;
+color: #666666;
+ padding-right: 10px;
+text-decoration: none;
+overflow: hidden;
+}
+#righttileholder ul{
+    list-style-type: none;
+    position: relative;
+    
+}
+#righttileholder ul a{
+    text-decoration: none;
+    color: inherit;
+}
+#bottomtitle,#righttitle{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-size: 15px;
+    background-color: #666666;
+    color: #cccccc;
+    height: 10%;
+}
+.blogsec{
+    position: absolute;
+    width: 77%;
+    top: 10%;
+    height: 80%;
+    background-color: rgba(255,255,255,0.5);
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+#bottomtileholder::-webkit-scrollbar,#righttileholder::-webkit-scrollbar,.blogsec::-webkit-scrollbar {
+    width: 5px;
+    height:5px;
+    border-radius: 10px;
+}
+#bottomtileholder::-webkit-scrollbar-track,#righttileholder::-webkit-scrollbar-track,.blogsec::-webkit-scrollbar {
+    -webkit-box-shadow: inset 5px 5px 7px rgba(66,66,66,1);
+}
+#bottomtileholder::-webkit-scrollbar-thumb,#righttileholder::-webkit-scrollbar-thumb,.blogsec::-webkit-scrollbar {
+  background-color: darkgrey;
+  outline: 5px solid slategrey;
+  border-radius: 10px;
+}
+
+.readermenu{
+position: absolute;
+top: 0px;
+left: 0px;
+height: 10%;
+width: 78.5%;
+padding-right: 20px;
+background-color: rgba(0,0,0,0.5);
+}
+.readermenu ul{
+    list-style-type: none;
+    font-family: "Brush Script MT",cursive;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+.readermenu ul li{
+display: inline-block;
+padding-left: 20px;
+float: right;
+}
+#rttile:hover,#bottile:hover {
+    background-color: rgba(255,255,255,0.7);
+    -moz-box-shadow: 0px 0px 1px 2px rgba(255,255,255, 0.57);
+    -webkit-box-shadow: 0px 0px 1px 2px rgba(1255,255,255, 0.57);
+    box-shadow: 0px 0px 1px 2px rgba(255,255,255, 0.57);
+    border-radius: 0px;
+}
